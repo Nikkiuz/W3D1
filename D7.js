@@ -284,20 +284,46 @@ findTheOldest()
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
 
-
+const countMovies = function () {
+  return movies.length
+}
 
 
 /* ESERCIZIO 11 (map)
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
 */
 
+const justTheTitles = function (){
+  const titles = movies.map(movie =>{
+    return movie.Title
+  })
+  return titles
+}
+
+console.log(justTheTitles())
+
 /* ESERCIZIO 12 (filter)
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
 
+const justInThisMillennium = function (){
+  const newArray = movies.filter(movie => {
+    if(parseInt(movie.Year) >= 2000){
+      return true
+    } else {
+      return false
+    }
+  })
+  return newArray
+}
+
+console.log(justInThisMillennium())
+
 /* ESERCIZIO 13 (reduce)
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
 */
+
+
 
 /* ESERCIZIO 14 (find)
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
