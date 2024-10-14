@@ -21,8 +21,9 @@ console.log(twostr('pippo', 'topolino'))
 */
 const firstArray= []
 
- for(i=0;i<10;i++){
-    firstArray.push(Math.ceil(Math.random()*100))
+ for(let i=0;i<10;i++){
+    firstArray.push(Math.floor(Math.random()*101)) 
+    // da 0 a 100
 
   }
 
@@ -70,6 +71,15 @@ numbers.reduce((acc,num) =>{
 /* ESERCIZIO 6 (map)
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
 */
+const incrementNumbers = function (numericArray, n){
+  const numericArray = numericArray.map(singleNumber => {
+    return singleNumber + n
+  })
+  return newArray
+}
+
+console.log(incrementNumbers(numbers, 34))
+
 
 // const arrayOfNumbers2 = [2,4,6,8,10]
 
@@ -86,6 +96,16 @@ numbers.reduce((acc,num) =>{
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
 */
 
+const countCharacters = function (stringArray){
+  const lengthsArray = stringArray.map((s)=> {
+    return s.length
+  })
+  return lengthsArray
+
+}
+
+countCharacters(['ciao', 'non', 'ci','capisco','niente'])
+
 // const stringArray = ['epicode', 'stress', 'test', 'exams']
 // const lengthArray = []
 
@@ -101,6 +121,15 @@ numbers.reduce((acc,num) =>{
 /* ESERCIZIO 8 (forEach o for)
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
+
+// const countOdds = function (){
+//   const odds = []
+//   for (let i=0; i<100; i++) {
+//     if (i % 2 !=== 0){
+//       countOdds.push(i)
+//     }
+//   }
+// }
 
 // const numbers = []
 // for (let i = 1; i <= 100; i++) {
@@ -237,17 +266,24 @@ const movies = [
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
 
-let oldestMovie = movies[0].Year
+const findTheOldest = function(){
+  let oldest = movies[0]
+  movies.forEach(movie => {
+    if(parseInt(movie.Year) < parseInt(oldest.Year)){
+      oldest = movie
+    }
+  })
 
-movies.forEach((i) => {
-movies[0].Year > movies[i].Year})
+  console.log(oldest)
+}
 
-console.log(oldestMovie)
+findTheOldest()
 
 
 /* ESERCIZIO 10
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
+
 
 
 
