@@ -239,8 +239,8 @@ const movies = [
 
 let oldestMovie = movies[0].Year
 
-forEach((oldest) => {
-movies[i].Year > movies[i].Year})
+movies.forEach((i) => {
+movies[0].Year > movies[i].Year})
 
 console.log(oldestMovie)
 
