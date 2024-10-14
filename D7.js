@@ -4,14 +4,14 @@
 */
 
 
-// const twostr = function (str1, str2) {
-//   const first = str1.slice(0, 2)
-//   const second = str2.slice(-3)
-//   const result = (first+second)
-//   return result.toUpperCase()
-// }
+const twostr = function (str1, str2) {
+  const first = str1.slice(0, 2)
+  const second = str2.slice(-3)
+  const result = (first+second)
+  return result.toUpperCase()
+}
 
-// console.log(twostr('pippo', 'topolino'))
+console.log(twostr('pippo', 'topolino'))
 
 
 
@@ -19,27 +19,27 @@
 /* ESERCIZIO 2 (for)
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
 */
-// const firstArray= []
+const firstArray= []
 
-//  for(i=0;i<10;i++){
-//     firstArray.push(Math.ceil(Math.random()*100))
+ for(i=0;i<10;i++){
+    firstArray.push(Math.ceil(Math.random()*100))
 
-//   }
+  }
 
-// console.log(firstArray)
+console.log(firstArray)
 
 /* ESERCIZIO 3 (filter)
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici
 */
 
-// arrayOfNumbers = [1,2,3,4,5,6,7,8,9,10]
+arrayOfNumbers = [1,2,3,4,5,6,7,8,9,10]
 
-// const evenNumbers = arrayOfNumbers.filter((num) => {
-//   return num % 2 === 0
+const evenNumbers = arrayOfNumbers.filter((num) => {
+  return num % 2 === 0
 
-// })
+})
 
-// console.log(evenNumbers)
+console.log(evenNumbers)
 
 
 
@@ -47,25 +47,25 @@
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
 
-// const numbers = [20,30,40,50]
-// let sum = 0
+const numbers = [20,30,40,50]
+let sum = 0
 
-// numbers.forEach((num) => {
-//  sum += num
-// })
+numbers.forEach((num) => {
+ sum += num
+})
 
-// console.log(sum)
+console.log(sum)
 
 /* ESERCIZIO 5 (reduce)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
 
-// let sum2 = 0
+let sum2 = 0
 
-// numbers.reduce((acc,num) =>{
-//   sum2 += num}, 0)
+numbers.reduce((acc,num) =>{
+  sum2 += num}, 0)
 
-//   console.log(sum2)
+  console.log(sum2)
 
 /* ESERCIZIO 6 (map)
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
@@ -237,9 +237,19 @@ const movies = [
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
 
+let oldestMovie = movies[0].Year
+
+forEach((oldest) => {
+movies[i].Year > movies[i].Year})
+
+console.log(oldestMovie)
+
+
 /* ESERCIZIO 10
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
+
+
 
 /* ESERCIZIO 11 (map)
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
