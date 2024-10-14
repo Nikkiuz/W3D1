@@ -4,14 +4,14 @@
 */
 
 
-const twostr = function (str1, str2) {
-  const first = str1.slice(0, 2)
-  const second = str2.slice(-3)
-  const result = (first+second)
-  return result.toUpperCase()
-}
+// const twostr = function (str1, str2) {
+//   const first = str1.slice(0, 2)
+//   const second = str2.slice(-3)
+//   const result = (first+second)
+//   return result.toUpperCase()
+// }
 
-console.log(twostr('pluto', 'pippo'))
+// console.log(twostr('pippo', 'topolino'))
 
 
 
@@ -19,27 +19,27 @@ console.log(twostr('pluto', 'pippo'))
 /* ESERCIZIO 2 (for)
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
 */
-const firstArray= []
+// const firstArray= []
 
- for(i=0;i<10;i++){
-    firstArray.push(Math.ceil(Math.random()*100))
+//  for(i=0;i<10;i++){
+//     firstArray.push(Math.ceil(Math.random()*100))
 
-  }
+//   }
 
-console.log(firstArray)
+// console.log(firstArray)
 
 /* ESERCIZIO 3 (filter)
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici
 */
 
-arrayOfNumbers = [1,2,3,4,5,6,7,8,9,10]
+// arrayOfNumbers = [1,2,3,4,5,6,7,8,9,10]
 
-const evenNumbers = arrayOfNumbers.filter((num) => {
-  return num % 2 === 0
+// const evenNumbers = arrayOfNumbers.filter((num) => {
+//   return num % 2 === 0
 
-})
+// })
 
-console.log(evenNumbers)
+// console.log(evenNumbers)
 
 
 
@@ -47,24 +47,75 @@ console.log(evenNumbers)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
 
+// const numbers = [20,30,40,50]
+// let sum = 0
 
+// numbers.forEach((num) => {
+//  sum += num
+// })
+
+// console.log(sum)
 
 /* ESERCIZIO 5 (reduce)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
 
+// let sum2 = 0
+
+// numbers.reduce((acc,num) =>{
+//   sum2 += num}, 0)
+
+//   console.log(sum2)
+
 /* ESERCIZIO 6 (map)
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
 */
+
+// const arrayOfNumbers2 = [2,4,6,8,10]
+
+// const newArrayOfNumbers2 = arrayOfNumbers2.map((array, number) => {
+//   return arrayOfNumbers2 
+// })
+
+// console.log(newArrayOfNumbers2(3))
+
+// MI SA CHE MI DEVI UN ATTIMO RISPIEGARE .MAP
 
 /* ESERCIZIO 7 (map)
   Scrivi una funzione che, dato un array di stringhe, ritorni un nuovo array contenente le lunghezze delle rispettive stringhe dell'array di partenza
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
 */
 
+// const stringArray = ['epicode', 'stress', 'test', 'exams']
+// const lengthArray = []
+
+
+// const newArrayOfStr = stringArray.maps((strings) => {
+//   return strings.length
+// })
+
+// console.log(newArrayOfStr)
+
+// COME SOPRA
+
 /* ESERCIZIO 8 (forEach o for)
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
+
+// const numbers = []
+// for (let i = 1; i <= 100; i++) {
+//     numbers.push(i);
+// }
+
+//   console.log(numbers)
+
+//   const oddNumbers = []
+//   for (let i =0; i<numbers.length;i++) {
+//     if (numbers[i] % 2 === 0){
+//       oddNumbers.push(i)
+//     }
+//   }
+// console.log(oddNumbers)
 
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
 const movies = [
